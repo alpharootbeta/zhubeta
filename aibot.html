@@ -102,11 +102,15 @@
         <button class="active" onclick="openSite('kimi', this)">Kimi</button>
         <button onclick="openSite('yuanbao', this)">yuanbao</button>
         <button onclick="openSite('nami', this)">Nami</button>
+        <button onclick="openSite('qwen', this)">qwen</button>
+
     </div>
     <div class="frame-container">
         <iframe id="kimiFrame" class="active" src="https://kimi.ai"></iframe>
         <iframe id="yuanbaoFrame" src="https://yuanbao.tencent.com/chat/"></iframe>
         <iframe id="namiFrame" src="https://n.cn"></iframe>
+        <iframe id="qwenFrame" src="https://chat.qwen.ai/"></iframe>
+
         <div id="warningMessage" class="warning-message">
             <h2>无法在框架中显示</h2>
             <p>该网站设置了安全策略，阻止在iframe中显示。请点击下方按钮在新窗口中打开。</p>
@@ -119,7 +123,8 @@
         const siteUrls = {
             'kimi': 'https://kimi.ai',
             'yuanbao': 'https://yuanbao.tencent.com/chat/',
-            'nami': 'https://n.cn'
+            'nami': 'https://n.cn',
+            'qwen':'https://chat.qwen.ai/'
         };
 
         // 获取警告消息元素和按钮
