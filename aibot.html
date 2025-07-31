@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI助手导航</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ddd;
+        }
+        .nav button {
+            flex: 1;
+            padding: 14px 16px;
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .nav button:hover {
+            background-color: #ddd;
+        }
+        .nav button.active {
+            background-color: #ccc;
+            font-weight: bold;
+        }
+        .frame-container {
+            flex-grow: 1;
+            overflow: hidden;
+            position: relative;
+        }
+        .frame-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .frame-container iframe.active {
+            display: block;
+        }
+        .warning-message {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f8f8f8;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .warning-message.active {
+            display: flex;
+        }
+        .warning-message h2 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        .warning-message p {
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+        .warning-message button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI助手导航</h1>
+    </div>
+    <div class="nav">
+        <button class="active" onclick="openSite('kimi', this)">Kimi</button>
+        <button onclick="openSite('yuanbao', this)">元豹</button>
+        <button onclick="openSite('nami', this)">Nami</button>
+    </div>
+    <div class="frame-container">
+        <iframe id="kimiFrame" class="active" src="https://kimi.ai"></iframe>
+        <iframe id="yuanbaoFrame" src="https://yuanbao.tencent.com/chat/"></iframe>
+        <iframe id="namiFrame" src="https://n.cn"></iframe>
+        <div id="warningMessage" class="warning-message">
+            <h2>无法在框架中显示</h2>
+            <p>该网站设置了安全策略，阻止在iframe中显示。请点击下方按钮在新窗口中打开。</p>
+            <button id="openInNewWindow">在新窗口中打开</button>
+        </div>
+    </div>
+
+    <script>
+        // 存储网站URL映射
+        const siteUrls = {
+            'kimi': 'https://kimi.ai',
+            'yuanbao': 'https://yuanbao.tencent.com/chat/',
+            'nami': 'https://n.cn'
+        };
+
+        // 获取警告消息元素和按钮
+        const warningMessage = document.getElementById('warningMessage');
+        const openInNewWindowBtn = document.getElementById('openInNewWindow');
+        let currentSite = 'kimi';
+
+        // 为iframe添加加载错误处理
+        Object.keys(siteUrls).forEach(siteId => {
+            const frame = document.getElementById(siteId + 'Frame');
+            frame.onerror = function() {
+                // 隐藏所有iframe
+                document.querySelectorAll('.frame-container iframe').forEach(f => f.classList.remove('active'));
+                // 显示警告消息
+                warningMessage.classList.add('active');
+                // 存储当前尝试访问的网站
+                currentSite = siteId;
+            };
+        });
+
+        // 新窗口打开按钮点击事件
+        openInNewWindowBtn.addEventListener('click', function() {
+            window.open(siteUrls[currentSite], '_blank');
+        });
+
+        function openSite(siteId, button) {
+            // 隐藏警告消息
+            warningMessage.classList.remove('active');
+
+            // 隐藏所有iframe
+            const frames = document.querySelectorAll('.frame-container iframe');
+            frames.forEach(frame => frame.classList.remove('active'));
+
+            // 显示对应的iframe
+            document.getElementById(siteId + 'Frame').classList.add('active');
+
+            // 移除所有按钮的active类
+            const buttons = document.querySelectorAll('.nav button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // 给当前按钮添加active类
+            button.classList.add('active');
+        }
+    </script>
+</body>
+</html>
