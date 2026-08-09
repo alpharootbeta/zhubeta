@@ -4,7 +4,6 @@ bind-address: '*'
 mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
-secret: "freedom"
 dns:
   enable: true
   listen: 0.0.0.0:1053
