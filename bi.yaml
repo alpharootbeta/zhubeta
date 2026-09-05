@@ -1,0 +1,1821 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 8.8.8.8
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: false
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - tls://8.8.4.4:853
+proxies:
+  - name: 🇭🇰 香港 | 11 | 直连 *0.3
+    type: vless
+    server: hk-11.bestcnline.com
+    port: 443
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: e4uWKryQxlmpSfhYmpyeDC7-pkcvCmhW3rc-SdyTHHQ
+      short-id: 585f38b037
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 00
+    type: vless
+    server: hk.speedtest.news
+    port: 28367
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: IEhgVZC5dBkxxsdo9aZKm7fbQy2CjLgcU5v23BL_OzU
+      short-id: 4414b6a0954e
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 01
+    type: vless
+    server: hk.speedtest.news
+    port: 18495
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: LYXqXwU9rewmCd5RL5MmImWSPx57ka2XfUBEvBxtaiQ
+      short-id: a3efcf51ae4e7a
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 02
+    type: vless
+    server: hk.speedtest.news
+    port: 47112
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 849xLakQTer6YzkEQy22AF1vCBxqjN5uWJScs_00cQY
+      short-id: 27d0b6a5f0e492
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 03
+    type: vless
+    server: hk.speedtest.news
+    port: 47113
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: nJLA2JiBBOPimVOc2N51ggUgg6c0MGTQdC68AorIkUU
+      short-id: 13e14085c7
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 04
+    type: vless
+    server: hk.speedtest.news
+    port: 47114
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: viOwoIOMrDEA9B40klerfC4AxI7GZOjt_j4vT1G-vFQ
+      short-id: c00bd3b323228fe3
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 05
+    type: vless
+    server: hk.speedtest.news
+    port: 10044
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: GeTEvQFXPMdP_fCWGRYuA7xXa-JRGr8_a1XqytWKVgc
+      short-id: 0b8af1b7f0
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 06
+    type: vless
+    server: hk.speedtest.news
+    port: 57148
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: g9DgPUq0000FOzD1JdBShlteexMDnHuC9c7KqcmvfHg
+      short-id: f245d54fd312c239
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 07
+    type: vless
+    server: hk.speedtest.news
+    port: 52067
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: NiF2gUV0vrBOVopB1bUN7CENNXPV4l7yFCG-vT1fjEw
+      short-id: 27e6cd61b007d5ba
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇰 香港 | 08
+    type: vless
+    server: hk.speedtest.news
+    port: 10035
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: kQ0brMtRDxKrbgePEFaz8Glc_lTQuDinOr1B2NBdbl8
+      short-id: 9e9cbf2ece1a83
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇸🇬 新加坡 | 01
+    type: vless
+    server: hk.speedtest.news
+    port: 47121
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: wbyPRTvDk7XQ_gkSYVjm5_MKw0_FoyzulwRYx5BMjkw
+      short-id: 58abd2f932b2b932
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇸🇬 新加坡 | 02
+    type: vless
+    server: hk.speedtest.news
+    port: 51153
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: QWMv-0ROeqb5Z6LIiTQliJfpkPhREDgK19lLQAp_UQo
+      short-id: 66b27d75893b0c7f
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇸🇬 新加坡 | 03
+    type: vless
+    server: hk.speedtest.news
+    port: 33503
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: vGjeUvemRNjde9sJoHRoQUNAzhgIqpiRcnrmORBj-TI
+      short-id: 168555a989b1
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇸🇬 新加坡 | 04
+    type: vless
+    server: hk.speedtest.news
+    port: 17059
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: RQ9NrIeUBtdNzrdNebjG5YNTqxnOoQsKTQM_ssqeeyc
+      short-id: ba2c36e319eb61
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇸🇬 新加坡 | 05
+    type: vless
+    server: hk.speedtest.news
+    port: 31818
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: QmbQ--E9qCf2VhDwBC-3AoyhxtFvb-yvxTOyjpkrc3Q
+      short-id: eb7ca77d79
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇯🇵 日本 | 01
+    type: vless
+    server: hk.speedtest.news
+    port: 47131
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: psVQdLdS5bhEKyEKwGrfemcOzAMYxKRHJPDT4Rr-bGk
+      short-id: 5701701c25ed
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇯🇵 日本 | 02
+    type: vless
+    server: hk.speedtest.news
+    port: 27872
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: dv_3e_XJKQrz5ernrjUh2NHkl7Gu--INSQoulCx__Ts
+      short-id: 4e953f8226bfc33a
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇯🇵 日本 | 03
+    type: vless
+    server: hk.speedtest.news
+    port: 32595
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: x0lBLmdica2ZiHi8nuW0YI_qUg1Sa8nt47A9-pKNkR8
+      short-id: ff493232de90182b
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇯🇵 日本 | 04
+    type: vless
+    server: hk.speedtest.news
+    port: 39769
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: bdOtMr8J-VZIHWe6CPHwPcUj3-EXep3kKUYq9C_yd2A
+      short-id: 43044c161b4f1865
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇯🇵 日本 | 05
+    type: vless
+    server: hk.speedtest.news
+    port: 51386
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 3CptLJS0zqPOsaVRAsNKDEUphtQkgV_ZEIByXfb8DSw
+      short-id: 8dc8e676
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇯🇵 日本 | 06
+    type: vless
+    server: hk.speedtest.news
+    port: 21660
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: tQ5oneH_k40w-qVVov2_jXayV08q8O2xAFhgkk8bHDk
+      short-id: d9d583f3a7539e50
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇹🇼 台湾 | 01
+    type: vless
+    server: hk.speedtest.news
+    port: 11862
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: mgyaFzWvg_BKrgPW5KLK6ciA77usDxwubIh3bBkf3x4
+      short-id: c0c38873ab81
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇹🇼 台湾 | 02
+    type: vless
+    server: hk.speedtest.news
+    port: 22445
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: XNP0DIQjpuA2eV3dhM1i-zUR1h3PFp3n_wBxZitL83I
+      short-id: e8744bbb0b7fe6
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇹🇼 台湾 | 03
+    type: vless
+    server: hk.speedtest.news
+    port: 16470
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: zpZlEvQDw-ImRURY5xZdP6fs6rwr24mF4HufC1df4UI
+      short-id: 970a5214
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇹🇼 台湾 | 04
+    type: vless
+    server: hk.speedtest.news
+    port: 19719
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: ZcXNljGcttJ70YqG2k7XHTRN0Yt0mTpFM2Yo-ZFxHF8
+      short-id: d77c0b6a2ba2c4
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇸 美国 | 01
+    type: vless
+    server: us.speedtest.news
+    port: 47141
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: pQ3TvMpLsKpOBlSeRnhuU0BIv6b0PGQRXaAfGGM40GY
+      short-id: 856b8b20
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇸 美国 | 02
+    type: vless
+    server: us.speedtest.news
+    port: 47142
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: kFGiZZ6_COBjbdiGW1ESjbsAXUJ6qYuxMwwJAQ_d1nw
+      short-id: 4193e6dec6dc54
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇸 美国 | 03
+    type: vless
+    server: us.speedtest.news
+    port: 47143
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 33qSzXZXOHRZOt-yN9XmZUDHDNDOS-7FeM7d-OOI_Tw
+      short-id: f82a1d7c4c
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇸 美国 | 04
+    type: vless
+    server: us.speedtest.news
+    port: 43863
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: cu-FQs3ddnV9ifkzzOX_59aM6wTc3x612f0PqlVVPyU
+      short-id: ab539884a6d1ff
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇸 美国 | 05
+    type: vless
+    server: us.speedtest.news
+    port: 18765
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: RkjRZZVA0GIlfu0P_4SXdntbidqI5TF4esbLBEd9bgs
+      short-id: ca47cd7511
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇸 美国 | 06
+    type: vless
+    server: us.speedtest.news
+    port: 50067
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: C42gUmn8wJOzwekAWxXIvamlShGhnVAZl4Acxiv57A8
+      short-id: 741bae99b3780cc3
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇸 美国 | 07
+    type: vless
+    server: us.speedtest.news
+    port: 38621
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: kpHLuk3pGrk2Fumfig7JQiKpRBpSeKwFdbqCdsCx224
+      short-id: 7edb7192c53fcf
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇰🇷 韩国
+    type: vless
+    server: hk.speedtest.news
+    port: 47151
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: UQc_VH5Mj8D_RM9ek4hTNGLGRbPXpR980vw6riR7E2s
+      short-id: 8009c1f176
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇬🇧 英国
+    type: vless
+    server: hk.speedtest.news
+    port: 47161
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: HNsi9-Ymdp8nVbW2x0uVWTgCFI_l9cd18b6-jvvk1XI
+      short-id: 2c623c61ae83e7
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇮🇩 印度
+    type: vless
+    server: hk.speedtest.news
+    port: 23401
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: wa7b5bv1CMDh59xzL4R0VI2YWsJRYHDRL6tQf_t8rH4
+      short-id: c3cf23fc40f3
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇩🇪 德国
+    type: vless
+    server: hk.speedtest.news
+    port: 23501
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: elAY2-irajBdLlchzcHN7yvCxQmsFkwpf8C3fGZzHl4
+      short-id: d7df1a57
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇧🇷 巴西
+    type: vless
+    server: hk.speedtest.news
+    port: 23601
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: hNaWIMDn5HLI7srAuuWnFxvXkfVN_Lf-YcYGJ7qTSkM
+      short-id: 54edb3deb95b
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇦🇺 澳大利亚
+    type: vless
+    server: hk.speedtest.news
+    port: 23701
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: bMFgYvW8KPq1aC0bEIFCcxDqWQRZEdN3ZAIW28HEmiA
+      short-id: e023a30c308713
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇦🇪 阿联酋
+    type: vless
+    server: hk.speedtest.news
+    port: 23801
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: iTKrKZhgH-kNNYFtZoXO_KfI2Hh-qZBmhg0M3MG0GlI
+      short-id: a69cd25fd95a71
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇷🇺 俄罗斯
+    type: vless
+    server: hk.speedtest.news
+    port: 32670
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: LWzoYX9gbVPe1a5bLOLMBNQDo_KldUEUmqVgIarUpVQ
+      short-id: 95e7b793
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇲🇾 马来西亚
+    type: vless
+    server: hk.speedtest.news
+    port: 23951
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: R9FhfVfRtlyUTHDYxccQrR0FofLgfaeLZv6DfrHmJFA
+      short-id: 11beb4383516
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇻🇳 越南
+    type: vless
+    server: hk.speedtest.news
+    port: 20241
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: tQo_KRF7bjjLGTQ-3x4IM5DKjlRqBaf5gxV8-stLnGQ
+      short-id: 09efa79c2c0de2f3
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇹🇭 泰国
+    type: vless
+    server: hk.speedtest.news
+    port: 20245
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 0_oDZQBdykG2YmTkl6jHcbsIiZML7tyg28lhh_nIV1g
+      short-id: ba8a5354f6e9
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇰🇿 哈萨克斯坦
+    type: vless
+    server: hk.speedtest.news
+    port: 20140
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 3zh1dsngfoEK44Oze-CCQY2ubIwftJ01cdKFvb0cGAk
+      short-id: 0fc3a5f13c6fc0e8
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇸🇪 瑞典
+    type: vless
+    server: hk.speedtest.news
+    port: 20181
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 7wp76fKCRoM8gzBEJlgQePsXBudxwg3LkPaiNO-4rSQ
+      short-id: 7f132da44775aa
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇫🇷 法国
+    type: vless
+    server: hk.speedtest.news
+    port: 20110
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: dTZh64LO01IT4Za2PG_JuMN_FMVmrBS--WLImtDrjiY
+      short-id: 8cf39332f9fab3
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇹🇷 土耳其
+    type: vless
+    server: hk.speedtest.news
+    port: 53558
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: jOCH05TvuxaOoQJKlVQMq8lmvMSIO393mLsRPpur434
+      short-id: 4a93b8377af389a1
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇪🇬 埃及
+    type: vless
+    server: hk.speedtest.news
+    port: 20220
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: fL6nrTzUqCG9W_2oXtZ9j-vqdNzxKeNVOp07sbkOCy4
+      short-id: 88bc596ea28699df
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇿🇦 南非
+    type: vless
+    server: hk.speedtest.news
+    port: 20080
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: ChZ0sLdomqz1juJWswvTdKqVKlWEqJBqef5q1WyuBls
+      short-id: f53b6e1faf825be9
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇺🇦 乌克兰
+    type: vless
+    server: hk.speedtest.news
+    port: 35564
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: OoGzY0KylTjr0VwaZ5j8HgIj60FgiukiwIYMB_ZeGG4
+      short-id: bfa7c2028ec9dd0b
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇱🇹 立陶宛
+    type: vless
+    server: hk.speedtest.news
+    port: 54898
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: j7Cndlb3y08Ltt0j5YMANxvm-nsy3eFijK5GZdcUezs
+      short-id: 5cd6b7336a
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇮🇩 印度尼西亚
+    type: vless
+    server: hk.speedtest.news
+    port: 22722
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: u5CD2M2HP1a8asA-SmdaPqv-w3ztAnYgRS7bQ0eaE3s
+      short-id: 574e059d0c6178
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇨🇭 瑞士
+    type: vless
+    server: hk.speedtest.news
+    port: 34606
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: Av8o_Q2WoJLw_npvGqigvqFY6ICp0MlZmmjySw5JSEo
+      short-id: d8b813b945d7cb4b
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇨🇦 加拿大
+    type: vless
+    server: hk.speedtest.news
+    port: 50105
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 7XJdNScpH_jzCHeZPp_F1fjOrkuIl6n5wIvOCoijUWA
+      short-id: 0ed58c3f9dfeb0
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇭🇺 匈牙利
+    type: vless
+    server: hk.speedtest.news
+    port: 32989
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: 0hupu_whTMh8CTGSjew7UIcm94dUKL7T1wKwyQNPdxI
+      short-id: 819906f661bb2ece
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇹🇬 多哥
+    type: vless
+    server: hk.speedtest.news
+    port: 26142
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: L1wd2gd5Ae3wPVI-IbqXZHyXx5yAhVervgCPiZnLowA
+      short-id: d27da5125106
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇮🇹 意大利
+    type: vless
+    server: hk.speedtest.news
+    port: 40239
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: _NqRjnm1e3wQ7lykwTh55NDCeoMPreC9Ym93lXOQ0WM
+      short-id: 25f39759b3786295
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇳🇴 挪威
+    type: vless
+    server: hk.speedtest.news
+    port: 47038
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: Ufdq_MVSPmtHGgGFQmNUnvAtMO6zmeJqjwN7zI6l5F0
+      short-id: 15498af97130
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇨🇿 捷克
+    type: vless
+    server: hk.speedtest.news
+    port: 28185
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: OkZwF4SO66eqCKH39XSq6V42y7VAJNFldz5q9ji4OXw
+      short-id: 6a241377f6dc
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇰🇭 柬埔寨
+    type: vless
+    server: hk.speedtest.news
+    port: 58003
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: IrahKVRTbXagzt9xCzFjG05ZUJOQQyyIL8RAlWGucTg
+      short-id: 854faf75faad3917
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇦🇿 阿塞拜疆
+    type: vless
+    server: hk.speedtest.news
+    port: 11649
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: HhVo9lWV3jhHIekMg2o50I4xNvq_ABl1kgytRALUvmw
+      short-id: 24d957dd0c1b
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇮🇱 以色列
+    type: vless
+    server: hk.speedtest.news
+    port: 56639
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: zxu01yNa4QDYXua_yaJScbl6DZlXjyy4FZGwY-bHTCk
+      short-id: 8ec3f8a8fcfab517
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇵🇱 波兰
+    type: vless
+    server: hk.speedtest.news
+    port: 11273
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: NNgZWpjaQZfeI1QoU75RIi5YH5EzNCv9R9a60pMb0Ww
+      short-id: 8a81aeaf7090
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇪🇸 西班牙
+    type: vless
+    server: hk.speedtest.news
+    port: 33871
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: BL5qiT-vmDfdvHDakN37BgjGuyvAT0Ba_mCWONBv1gg
+      short-id: 25ce22f28138fc
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇲🇽 墨西哥
+    type: vless
+    server: hk.speedtest.news
+    port: 45530
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: fVTU4B6d1cmO33eX1-U-lQFBe8XvjzxJ2vLU8HPEEBs
+      short-id: 0d2ae9ba82b368e1
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇨🇱 智利
+    type: vless
+    server: hk.speedtest.news
+    port: 27566
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: FSp-5BEP9eRuyYL79pEbyFC8O-XXPRmn61jBNrnj5i8
+      short-id: e7cbadddea2c0c
+    client-fingerprint: chrome
+    network: tcp
+  - name: 🇨🇴 哥伦比亚
+    type: vless
+    server: hk.speedtest.news
+    port: 22041
+    uuid: fbd32de9-67ae-464f-9c66-2d7d1d21b6ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    encryption: none
+    tls: true
+    skip-cert-verify: true
+    servername: www.apple.com
+    reality-opts:
+      public-key: QvRhzHbdbKLD1X2mzHfEx2pNRU9E-6MOAuubHA54I20
+      short-id: 719760ddf50777
+    client-fingerprint: chrome
+    network: tcp
+proxy-groups:
+  - name: FlyBit
+    type: select
+    proxies:
+      - 🇭🇰 香港 | 11 | 直连 *0.3
+      - 🇭🇰 香港 | 00
+      - 🇭🇰 香港 | 01
+      - 🇭🇰 香港 | 02
+      - 🇭🇰 香港 | 03
+      - 🇭🇰 香港 | 04
+      - 🇭🇰 香港 | 05
+      - 🇭🇰 香港 | 06
+      - 🇭🇰 香港 | 07
+      - 🇭🇰 香港 | 08
+      - 🇸🇬 新加坡 | 01
+      - 🇸🇬 新加坡 | 02
+      - 🇸🇬 新加坡 | 03
+      - 🇸🇬 新加坡 | 04
+      - 🇸🇬 新加坡 | 05
+      - 🇯🇵 日本 | 01
+      - 🇯🇵 日本 | 02
+      - 🇯🇵 日本 | 03
+      - 🇯🇵 日本 | 04
+      - 🇯🇵 日本 | 05
+      - 🇯🇵 日本 | 06
+      - 🇹🇼 台湾 | 01
+      - 🇹🇼 台湾 | 02
+      - 🇹🇼 台湾 | 03
+      - 🇹🇼 台湾 | 04
+      - 🇺🇸 美国 | 01
+      - 🇺🇸 美国 | 02
+      - 🇺🇸 美国 | 03
+      - 🇺🇸 美国 | 04
+      - 🇺🇸 美国 | 05
+      - 🇺🇸 美国 | 06
+      - 🇺🇸 美国 | 07
+      - 🇰🇷 韩国
+      - 🇬🇧 英国
+      - 🇮🇩 印度
+      - 🇩🇪 德国
+      - 🇧🇷 巴西
+      - 🇦🇺 澳大利亚
+      - 🇦🇪 阿联酋
+      - 🇷🇺 俄罗斯
+      - 🇲🇾 马来西亚
+      - 🇻🇳 越南
+      - 🇹🇭 泰国
+      - 🇰🇿 哈萨克斯坦
+      - 🇸🇪 瑞典
+      - 🇫🇷 法国
+      - 🇹🇷 土耳其
+      - 🇪🇬 埃及
+      - 🇿🇦 南非
+      - 🇺🇦 乌克兰
+      - 🇱🇹 立陶宛
+      - 🇮🇩 印度尼西亚
+      - 🇨🇭 瑞士
+      - 🇨🇦 加拿大
+      - 🇭🇺 匈牙利
+      - 🇹🇬 多哥
+      - 🇮🇹 意大利
+      - 🇳🇴 挪威
+      - 🇨🇿 捷克
+      - 🇰🇭 柬埔寨
+      - 🇦🇿 阿塞拜疆
+      - 🇮🇱 以色列
+      - 🇵🇱 波兰
+      - 🇪🇸 西班牙
+      - 🇲🇽 墨西哥
+      - 🇨🇱 智利
+      - 🇨🇴 哥伦比亚
+rules:
+  - DOMAIN,sub.flybit.vip,DIRECT
+  - DOMAIN,rutnzgnkphxs.sealosgzg.site,DIRECT
+  - DOMAIN,fb.xytc.store,DIRECT
+  - DOMAIN,s.fb.22na.cn,DIRECT
+  - DOMAIN-SUFFIX,services.googleapis.cn,FlyBit
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,FlyBit
+  - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT
+  - DOMAIN,developer.apple.com,FlyBit
+  - DOMAIN-SUFFIX,digicert.com,FlyBit
+  - DOMAIN,ocsp.apple.com,FlyBit
+  - DOMAIN,ocsp.comodoca.com,FlyBit
+  - DOMAIN,ocsp.usertrust.com,FlyBit
+  - DOMAIN,ocsp.sectigo.com,FlyBit
+  - DOMAIN,ocsp.verisign.net,FlyBit
+  - DOMAIN-SUFFIX,apple-dns.net,FlyBit
+  - DOMAIN,testflight.apple.com,FlyBit
+  - DOMAIN,sandbox.itunes.apple.com,FlyBit
+  - DOMAIN,itunes.apple.com,FlyBit
+  - DOMAIN-SUFFIX,apps.apple.com,FlyBit
+  - DOMAIN-SUFFIX,blobstore.apple.com,FlyBit
+  - DOMAIN,cvws.icloud-content.com,FlyBit
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,cdn20.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  - DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+  - DOMAIN-SUFFIX,edgekey.net,DIRECT
+  - DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+  - DOMAIN-SUFFIX,mwcname.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+  - DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+  - DOMAIN-SUFFIX,126.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,127.net,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,36kr.com,DIRECT
+  - DOMAIN-SUFFIX,acfun.tv,DIRECT
+  - DOMAIN-SUFFIX,air-matters.com,DIRECT
+  - DOMAIN-SUFFIX,aixifan.com,DIRECT
+  - DOMAIN-KEYWORD,alicdn,DIRECT
+  - DOMAIN-KEYWORD,alipay,DIRECT
+  - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,autonavi.com,DIRECT
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-SUFFIX,bdimg.com,DIRECT
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,bilivideo.com,DIRECT
+  - DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+  - DOMAIN-SUFFIX,clouddn.com,DIRECT
+  - DOMAIN-SUFFIX,cnbeta.com,DIRECT
+  - DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+  - DOMAIN-SUFFIX,cootekservice.com,DIRECT
+  - DOMAIN-SUFFIX,csdn.net,DIRECT
+  - DOMAIN-SUFFIX,ctrip.com,DIRECT
+  - DOMAIN-SUFFIX,dgtle.com,DIRECT
+  - DOMAIN-SUFFIX,dianping.com,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,doubanio.com,DIRECT
+  - DOMAIN-SUFFIX,duokan.com,DIRECT
+  - DOMAIN-SUFFIX,easou.com,DIRECT
+  - DOMAIN-SUFFIX,ele.me,DIRECT
+  - DOMAIN-SUFFIX,feng.com,DIRECT
+  - DOMAIN-SUFFIX,fir.im,DIRECT
+  - DOMAIN-SUFFIX,frdic.com,DIRECT
+  - DOMAIN-SUFFIX,g-cores.com,DIRECT
+  - DOMAIN-SUFFIX,godic.net,DIRECT
+  - DOMAIN-SUFFIX,gtimg.com,DIRECT
+  - DOMAIN,cdn.hockeyapp.net,DIRECT
+  - DOMAIN-SUFFIX,hongxiu.com,DIRECT
+  - DOMAIN-SUFFIX,hxcdn.net,DIRECT
+  - DOMAIN-SUFFIX,iciba.com,DIRECT
+  - DOMAIN-SUFFIX,ifeng.com,DIRECT
+  - DOMAIN-SUFFIX,ifengimg.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jianshu.com,DIRECT
+  - DOMAIN-SUFFIX,knewone.com,DIRECT
+  - DOMAIN-SUFFIX,le.com,DIRECT
+  - DOMAIN-SUFFIX,lecloud.com,DIRECT
+  - DOMAIN-SUFFIX,lemicp.com,DIRECT
+  - DOMAIN-SUFFIX,licdn.com,DIRECT
+  - DOMAIN-SUFFIX,luoo.net,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,mi.com,DIRECT
+  - DOMAIN-SUFFIX,miaopai.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+  - DOMAIN-SUFFIX,miui.com,DIRECT
+  - DOMAIN-SUFFIX,miwifi.com,DIRECT
+  - DOMAIN-SUFFIX,mob.com,DIRECT
+  - DOMAIN-SUFFIX,netease.com,DIRECT
+  - DOMAIN-SUFFIX,office.com,DIRECT
+  - DOMAIN-SUFFIX,office365.com,DIRECT
+  - DOMAIN-KEYWORD,officecdn,DIRECT
+  - DOMAIN-SUFFIX,oschina.net,DIRECT
+  - DOMAIN-SUFFIX,ppsimg.com,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT
+  - DOMAIN-SUFFIX,qcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qdaily.com,DIRECT
+  - DOMAIN-SUFFIX,qdmm.com,DIRECT
+  - DOMAIN-SUFFIX,qhimg.com,DIRECT
+  - DOMAIN-SUFFIX,qhres.com,DIRECT
+  - DOMAIN-SUFFIX,qidian.com,DIRECT
+  - DOMAIN-SUFFIX,qihucdn.com,DIRECT
+  - DOMAIN-SUFFIX,qiniu.com,DIRECT
+  - DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+  - DOMAIN-SUFFIX,qiyipic.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,qqurl.com,DIRECT
+  - DOMAIN-SUFFIX,rarbg.to,DIRECT
+  - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+  - DOMAIN-SUFFIX,segmentfault.com,DIRECT
+  - DOMAIN-SUFFIX,sinaapp.com,DIRECT
+  - DOMAIN-SUFFIX,smzdm.com,DIRECT
+  - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+  - DOMAIN-SUFFIX,sogou.com,DIRECT
+  - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+  - DOMAIN-SUFFIX,sohu.com,DIRECT
+  - DOMAIN-SUFFIX,soku.com,DIRECT
+  - DOMAIN-SUFFIX,speedtest.net,DIRECT
+  - DOMAIN-SUFFIX,sspai.com,DIRECT
+  - DOMAIN-SUFFIX,suning.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,tenpay.com,DIRECT
+  - DOMAIN-SUFFIX,tianyancha.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,tudou.com,DIRECT
+  - DOMAIN-SUFFIX,umetrip.com,DIRECT
+  - DOMAIN-SUFFIX,upaiyun.com,DIRECT
+  - DOMAIN-SUFFIX,upyun.com,DIRECT
+  - DOMAIN-SUFFIX,veryzhun.com,DIRECT
+  - DOMAIN-SUFFIX,weather.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.net,DIRECT
+  - DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+  - DOMAIN-SUFFIX,ximalaya.com,DIRECT
+  - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+  - DOMAIN-SUFFIX,xunlei.com,DIRECT
+  - DOMAIN-SUFFIX,yhd.com,DIRECT
+  - DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+  - DOMAIN-SUFFIX,yinxiang.com,DIRECT
+  - DOMAIN-SUFFIX,ykimg.com,DIRECT
+  - DOMAIN-SUFFIX,youdao.com,DIRECT
+  - DOMAIN-SUFFIX,youku.com,DIRECT
+  - DOMAIN-SUFFIX,zealer.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+  - DOMAIN-SUFFIX,zoho.com,DIRECT
+  - DOMAIN-KEYWORD,amazon,FlyBit
+  - DOMAIN-KEYWORD,google,FlyBit
+  - DOMAIN-KEYWORD,gmail,FlyBit
+  - DOMAIN-KEYWORD,youtube,FlyBit
+  - DOMAIN-KEYWORD,facebook,FlyBit
+  - DOMAIN-SUFFIX,fb.me,FlyBit
+  - DOMAIN-SUFFIX,fbcdn.net,FlyBit
+  - DOMAIN-KEYWORD,twitter,FlyBit
+  - DOMAIN-KEYWORD,instagram,FlyBit
+  - DOMAIN-KEYWORD,dropbox,FlyBit
+  - DOMAIN-SUFFIX,twimg.com,FlyBit
+  - DOMAIN-KEYWORD,blogspot,FlyBit
+  - DOMAIN-SUFFIX,youtu.be,FlyBit
+  - DOMAIN-KEYWORD,whatsapp,FlyBit
+  - DOMAIN-KEYWORD,admarvel,REJECT
+  - DOMAIN-KEYWORD,admaster,REJECT
+  - DOMAIN-KEYWORD,adsage,REJECT
+  - DOMAIN-KEYWORD,adsmogo,REJECT
+  - DOMAIN-KEYWORD,adsrvmedia,REJECT
+  - DOMAIN-KEYWORD,adwords,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-SUFFIX,appsflyer.com,REJECT
+  - DOMAIN-KEYWORD,domob,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-KEYWORD,duomeng,REJECT
+  - DOMAIN-KEYWORD,dwtrack,REJECT
+  - DOMAIN-KEYWORD,guanggao,REJECT
+  - DOMAIN-KEYWORD,lianmeng,REJECT
+  - DOMAIN-SUFFIX,mmstat.com,REJECT
+  - DOMAIN-KEYWORD,mopub,REJECT
+  - DOMAIN-KEYWORD,omgmta,REJECT
+  - DOMAIN-KEYWORD,openx,REJECT
+  - DOMAIN-KEYWORD,partnerad,REJECT
+  - DOMAIN-KEYWORD,pingfore,REJECT
+  - DOMAIN-KEYWORD,supersonicads,REJECT
+  - DOMAIN-KEYWORD,uedas,REJECT
+  - DOMAIN-KEYWORD,umeng,REJECT
+  - DOMAIN-KEYWORD,usage,REJECT
+  - DOMAIN-SUFFIX,vungle.com,REJECT
+  - DOMAIN-KEYWORD,wlmonitor,REJECT
+  - DOMAIN-KEYWORD,zjtoolbar,REJECT
+  - DOMAIN-SUFFIX,9to5mac.com,FlyBit
+  - DOMAIN-SUFFIX,abpchina.org,FlyBit
+  - DOMAIN-SUFFIX,adblockplus.org,FlyBit
+  - DOMAIN-SUFFIX,adobe.com,FlyBit
+  - DOMAIN-SUFFIX,akamaized.net,FlyBit
+  - DOMAIN-SUFFIX,alfredapp.com,FlyBit
+  - DOMAIN-SUFFIX,amplitude.com,FlyBit
+  - DOMAIN-SUFFIX,ampproject.org,FlyBit
+  - DOMAIN-SUFFIX,android.com,FlyBit
+  - DOMAIN-SUFFIX,angularjs.org,FlyBit
+  - DOMAIN-SUFFIX,aolcdn.com,FlyBit
+  - DOMAIN-SUFFIX,apkpure.com,FlyBit
+  - DOMAIN-SUFFIX,appledaily.com,FlyBit
+  - DOMAIN-SUFFIX,appshopper.com,FlyBit
+  - DOMAIN-SUFFIX,appspot.com,FlyBit
+  - DOMAIN-SUFFIX,arcgis.com,FlyBit
+  - DOMAIN-SUFFIX,archive.org,FlyBit
+  - DOMAIN-SUFFIX,armorgames.com,FlyBit
+  - DOMAIN-SUFFIX,aspnetcdn.com,FlyBit
+  - DOMAIN-SUFFIX,att.com,FlyBit
+  - DOMAIN-SUFFIX,awsstatic.com,FlyBit
+  - DOMAIN-SUFFIX,azureedge.net,FlyBit
+  - DOMAIN-SUFFIX,azurewebsites.net,FlyBit
+  - DOMAIN-SUFFIX,bing.com,FlyBit
+  - DOMAIN-SUFFIX,bintray.com,FlyBit
+  - DOMAIN-SUFFIX,bit.com,FlyBit
+  - DOMAIN-SUFFIX,bit.ly,FlyBit
+  - DOMAIN-SUFFIX,bitbucket.org,FlyBit
+  - DOMAIN-SUFFIX,bjango.com,FlyBit
+  - DOMAIN-SUFFIX,bkrtx.com,FlyBit
+  - DOMAIN-SUFFIX,blog.com,FlyBit
+  - DOMAIN-SUFFIX,blogcdn.com,FlyBit
+  - DOMAIN-SUFFIX,blogger.com,FlyBit
+  - DOMAIN-SUFFIX,blogsmithmedia.com,FlyBit
+  - DOMAIN-SUFFIX,blogspot.com,FlyBit
+  - DOMAIN-SUFFIX,blogspot.hk,FlyBit
+  - DOMAIN-SUFFIX,bloomberg.com,FlyBit
+  - DOMAIN-SUFFIX,box.com,FlyBit
+  - DOMAIN-SUFFIX,box.net,FlyBit
+  - DOMAIN-SUFFIX,cachefly.net,FlyBit
+  - DOMAIN-SUFFIX,chromium.org,FlyBit
+  - DOMAIN-SUFFIX,cl.ly,FlyBit
+  - DOMAIN-SUFFIX,cloudflare.com,FlyBit
+  - DOMAIN-SUFFIX,cloudfront.net,FlyBit
+  - DOMAIN-SUFFIX,cloudmagic.com,FlyBit
+  - DOMAIN-SUFFIX,cmail19.com,FlyBit
+  - DOMAIN-SUFFIX,cnet.com,FlyBit
+  - DOMAIN-SUFFIX,cocoapods.org,FlyBit
+  - DOMAIN-SUFFIX,comodoca.com,FlyBit
+  - DOMAIN-SUFFIX,crashlytics.com,FlyBit
+  - DOMAIN-SUFFIX,culturedcode.com,FlyBit
+  - DOMAIN-SUFFIX,d.pr,FlyBit
+  - DOMAIN-SUFFIX,danilo.to,FlyBit
+  - DOMAIN-SUFFIX,dayone.me,FlyBit
+  - DOMAIN-SUFFIX,db.tt,FlyBit
+  - DOMAIN-SUFFIX,deskconnect.com,FlyBit
+  - DOMAIN-SUFFIX,disq.us,FlyBit
+  - DOMAIN-SUFFIX,disqus.com,FlyBit
+  - DOMAIN-SUFFIX,disquscdn.com,FlyBit
+  - DOMAIN-SUFFIX,dnsimple.com,FlyBit
+  - DOMAIN-SUFFIX,docker.com,FlyBit
+  - DOMAIN-SUFFIX,dribbble.com,FlyBit
+  - DOMAIN-SUFFIX,droplr.com,FlyBit
+  - DOMAIN-SUFFIX,duckduckgo.com,FlyBit
+  - DOMAIN-SUFFIX,dueapp.com,FlyBit
+  - DOMAIN-SUFFIX,dytt8.net,FlyBit
+  - DOMAIN-SUFFIX,edgecastcdn.net,FlyBit
+  - DOMAIN-SUFFIX,edgekey.net,FlyBit
+  - DOMAIN-SUFFIX,edgesuite.net,FlyBit
+  - DOMAIN-SUFFIX,engadget.com,FlyBit
+  - DOMAIN-SUFFIX,entrust.net,FlyBit
+  - DOMAIN-SUFFIX,eurekavpt.com,FlyBit
+  - DOMAIN-SUFFIX,evernote.com,FlyBit
+  - DOMAIN-SUFFIX,fabric.io,FlyBit
+  - DOMAIN-SUFFIX,fast.com,FlyBit
+  - DOMAIN-SUFFIX,fastly.net,FlyBit
+  - DOMAIN-SUFFIX,fc2.com,FlyBit
+  - DOMAIN-SUFFIX,feedburner.com,FlyBit
+  - DOMAIN-SUFFIX,feedly.com,FlyBit
+  - DOMAIN-SUFFIX,feedsportal.com,FlyBit
+  - DOMAIN-SUFFIX,fiftythree.com,FlyBit
+  - DOMAIN-SUFFIX,firebaseio.com,FlyBit
+  - DOMAIN-SUFFIX,flexibits.com,FlyBit
+  - DOMAIN-SUFFIX,flickr.com,FlyBit
+  - DOMAIN-SUFFIX,flipboard.com,FlyBit
+  - DOMAIN-SUFFIX,g.co,FlyBit
+  - DOMAIN-SUFFIX,gabia.net,FlyBit
+  - DOMAIN-SUFFIX,geni.us,FlyBit
+  - DOMAIN-SUFFIX,gfx.ms,FlyBit
+  - DOMAIN-SUFFIX,ggpht.com,FlyBit
+  - DOMAIN-SUFFIX,ghostnoteapp.com,FlyBit
+  - DOMAIN-SUFFIX,git.io,FlyBit
+  - DOMAIN-KEYWORD,github,FlyBit
+  - DOMAIN-SUFFIX,globalsign.com,FlyBit
+  - DOMAIN-SUFFIX,gmodules.com,FlyBit
+  - DOMAIN-SUFFIX,godaddy.com,FlyBit
+  - DOMAIN-SUFFIX,golang.org,FlyBit
+  - DOMAIN-SUFFIX,gongm.in,FlyBit
+  - DOMAIN-SUFFIX,goo.gl,FlyBit
+  - DOMAIN-SUFFIX,goodreaders.com,FlyBit
+  - DOMAIN-SUFFIX,goodreads.com,FlyBit
+  - DOMAIN-SUFFIX,gravatar.com,FlyBit
+  - DOMAIN-SUFFIX,gstatic.com,FlyBit
+  - DOMAIN-SUFFIX,gvt0.com,FlyBit
+  - DOMAIN-SUFFIX,hockeyapp.net,FlyBit
+  - DOMAIN-SUFFIX,hotmail.com,FlyBit
+  - DOMAIN-SUFFIX,icons8.com,FlyBit
+  - DOMAIN-SUFFIX,ifixit.com,FlyBit
+  - DOMAIN-SUFFIX,ift.tt,FlyBit
+  - DOMAIN-SUFFIX,ifttt.com,FlyBit
+  - DOMAIN-SUFFIX,iherb.com,FlyBit
+  - DOMAIN-SUFFIX,imageshack.us,FlyBit
+  - DOMAIN-SUFFIX,img.ly,FlyBit
+  - DOMAIN-SUFFIX,imgur.com,FlyBit
+  - DOMAIN-SUFFIX,imore.com,FlyBit
+  - DOMAIN-SUFFIX,instapaper.com,FlyBit
+  - DOMAIN-SUFFIX,ipn.li,FlyBit
+  - DOMAIN-SUFFIX,is.gd,FlyBit
+  - DOMAIN-SUFFIX,issuu.com,FlyBit
+  - DOMAIN-SUFFIX,itgonglun.com,FlyBit
+  - DOMAIN-SUFFIX,itun.es,FlyBit
+  - DOMAIN-SUFFIX,ixquick.com,FlyBit
+  - DOMAIN-SUFFIX,j.mp,FlyBit
+  - DOMAIN-SUFFIX,js.revsci.net,FlyBit
+  - DOMAIN-SUFFIX,jshint.com,FlyBit
+  - DOMAIN-SUFFIX,jtvnw.net,FlyBit
+  - DOMAIN-SUFFIX,justgetflux.com,FlyBit
+  - DOMAIN-SUFFIX,kat.cr,FlyBit
+  - DOMAIN-SUFFIX,klip.me,FlyBit
+  - DOMAIN-SUFFIX,libsyn.com,FlyBit
+  - DOMAIN-SUFFIX,linkedin.com,FlyBit
+  - DOMAIN-SUFFIX,line-apps.com,FlyBit
+  - DOMAIN-SUFFIX,linode.com,FlyBit
+  - DOMAIN-SUFFIX,lithium.com,FlyBit
+  - DOMAIN-SUFFIX,littlehj.com,FlyBit
+  - DOMAIN-SUFFIX,live.com,FlyBit
+  - DOMAIN-SUFFIX,live.net,FlyBit
+  - DOMAIN-SUFFIX,livefilestore.com,FlyBit
+  - DOMAIN-SUFFIX,llnwd.net,FlyBit
+  - DOMAIN-SUFFIX,macid.co,FlyBit
+  - DOMAIN-SUFFIX,macromedia.com,FlyBit
+  - DOMAIN-SUFFIX,macrumors.com,FlyBit
+  - DOMAIN-SUFFIX,mashable.com,FlyBit
+  - DOMAIN-SUFFIX,mathjax.org,FlyBit
+  - DOMAIN-SUFFIX,medium.com,FlyBit
+  - DOMAIN-SUFFIX,mega.co.nz,FlyBit
+  - DOMAIN-SUFFIX,mega.nz,FlyBit
+  - DOMAIN-SUFFIX,megaupload.com,FlyBit
+  - DOMAIN-SUFFIX,microsofttranslator.com,FlyBit
+  - DOMAIN-SUFFIX,mindnode.com,FlyBit
+  - DOMAIN-SUFFIX,mobile01.com,FlyBit
+  - DOMAIN-SUFFIX,modmyi.com,FlyBit
+  - DOMAIN-SUFFIX,msedge.net,FlyBit
+  - DOMAIN-SUFFIX,myfontastic.com,FlyBit
+  - DOMAIN-SUFFIX,name.com,FlyBit
+  - DOMAIN-SUFFIX,nextmedia.com,FlyBit
+  - DOMAIN-SUFFIX,nsstatic.net,FlyBit
+  - DOMAIN-SUFFIX,nssurge.com,FlyBit
+  - DOMAIN-SUFFIX,nyt.com,FlyBit
+  - DOMAIN-SUFFIX,nytimes.com,FlyBit
+  - DOMAIN-SUFFIX,omnigroup.com,FlyBit
+  - DOMAIN-SUFFIX,onedrive.com,FlyBit
+  - DOMAIN-SUFFIX,onenote.com,FlyBit
+  - DOMAIN-SUFFIX,ooyala.com,FlyBit
+  - DOMAIN-SUFFIX,openvpn.net,FlyBit
+  - DOMAIN-SUFFIX,openwrt.org,FlyBit
+  - DOMAIN-SUFFIX,orkut.com,FlyBit
+  - DOMAIN-SUFFIX,osxdaily.com,FlyBit
+  - DOMAIN-SUFFIX,outlook.com,FlyBit
+  - DOMAIN-SUFFIX,ow.ly,FlyBit
+  - DOMAIN-SUFFIX,paddleapi.com,FlyBit
+  - DOMAIN-SUFFIX,parallels.com,FlyBit
+  - DOMAIN-SUFFIX,parse.com,FlyBit
+  - DOMAIN-SUFFIX,pdfexpert.com,FlyBit
+  - DOMAIN-SUFFIX,periscope.tv,FlyBit
+  - DOMAIN-SUFFIX,pinboard.in,FlyBit
+  - DOMAIN-SUFFIX,pinterest.com,FlyBit
+  - DOMAIN-SUFFIX,pixelmator.com,FlyBit
+  - DOMAIN-SUFFIX,pixiv.net,FlyBit
+  - DOMAIN-SUFFIX,playpcesor.com,FlyBit
+  - DOMAIN-SUFFIX,playstation.com,FlyBit
+  - DOMAIN-SUFFIX,playstation.com.hk,FlyBit
+  - DOMAIN-SUFFIX,playstation.net,FlyBit
+  - DOMAIN-SUFFIX,playstationnetwork.com,FlyBit
+  - DOMAIN-SUFFIX,pushwoosh.com,FlyBit
+  - DOMAIN-SUFFIX,rime.im,FlyBit
+  - DOMAIN-SUFFIX,servebom.com,FlyBit
+  - DOMAIN-SUFFIX,sfx.ms,FlyBit
+  - DOMAIN-SUFFIX,shadowsocks.org,FlyBit
+  - DOMAIN-SUFFIX,sharethis.com,FlyBit
+  - DOMAIN-SUFFIX,shazam.com,FlyBit
+  - DOMAIN-SUFFIX,skype.com,FlyBit
+  - DOMAIN-SUFFIX,smartdnsFlyBit.com,FlyBit
+  - DOMAIN-SUFFIX,smartmailcloud.com,FlyBit
+  - DOMAIN-SUFFIX,sndcdn.com,FlyBit
+  - DOMAIN-SUFFIX,sony.com,FlyBit
+  - DOMAIN-SUFFIX,soundcloud.com,FlyBit
+  - DOMAIN-SUFFIX,sourceforge.net,FlyBit
+  - DOMAIN-SUFFIX,spotify.com,FlyBit
+  - DOMAIN-SUFFIX,squarespace.com,FlyBit
+  - DOMAIN-SUFFIX,sstatic.net,FlyBit
+  - DOMAIN-SUFFIX,st.luluku.pw,FlyBit
+  - DOMAIN-SUFFIX,stackoverflow.com,FlyBit
+  - DOMAIN-SUFFIX,startpage.com,FlyBit
+  - DOMAIN-SUFFIX,staticflickr.com,FlyBit
+  - DOMAIN-SUFFIX,steamcommunity.com,FlyBit
+  - DOMAIN-SUFFIX,symauth.com,FlyBit
+  - DOMAIN-SUFFIX,symcb.com,FlyBit
+  - DOMAIN-SUFFIX,symcd.com,FlyBit
+  - DOMAIN-SUFFIX,tapbots.com,FlyBit
+  - DOMAIN-SUFFIX,tapbots.net,FlyBit
+  - DOMAIN-SUFFIX,tdesktop.com,FlyBit
+  - DOMAIN-SUFFIX,techcrunch.com,FlyBit
+  - DOMAIN-SUFFIX,techsmith.com,FlyBit
+  - DOMAIN-SUFFIX,thepiratebay.org,FlyBit
+  - DOMAIN-SUFFIX,theverge.com,FlyBit
+  - DOMAIN-SUFFIX,time.com,FlyBit
+  - DOMAIN-SUFFIX,timeinc.net,FlyBit
+  - DOMAIN-SUFFIX,tiny.cc,FlyBit
+  - DOMAIN-SUFFIX,tinypic.com,FlyBit
+  - DOMAIN-SUFFIX,tmblr.co,FlyBit
+  - DOMAIN-SUFFIX,todoist.com,FlyBit
+  - DOMAIN-SUFFIX,trello.com,FlyBit
+  - DOMAIN-SUFFIX,trustasiassl.com,FlyBit
+  - DOMAIN-SUFFIX,tumblr.co,FlyBit
+  - DOMAIN-SUFFIX,tumblr.com,FlyBit
+  - DOMAIN-SUFFIX,tweetdeck.com,FlyBit
+  - DOMAIN-SUFFIX,tweetmarker.net,FlyBit
+  - DOMAIN-SUFFIX,twitch.tv,FlyBit
+  - DOMAIN-SUFFIX,txmblr.com,FlyBit
+  - DOMAIN-SUFFIX,typekit.net,FlyBit
+  - DOMAIN-SUFFIX,ubertags.com,FlyBit
+  - DOMAIN-SUFFIX,ublock.org,FlyBit
+  - DOMAIN-SUFFIX,ubnt.com,FlyBit
+  - DOMAIN-SUFFIX,ulyssesapp.com,FlyBit
+  - DOMAIN-SUFFIX,urchin.com,FlyBit
+  - DOMAIN-SUFFIX,usertrust.com,FlyBit
+  - DOMAIN-SUFFIX,v.gd,FlyBit
+  - DOMAIN-SUFFIX,v2ex.com,FlyBit
+  - DOMAIN-SUFFIX,vimeo.com,FlyBit
+  - DOMAIN-SUFFIX,vimeocdn.com,FlyBit
+  - DOMAIN-SUFFIX,vine.co,FlyBit
+  - DOMAIN-SUFFIX,vivaldi.com,FlyBit
+  - DOMAIN-SUFFIX,vox-cdn.com,FlyBit
+  - DOMAIN-SUFFIX,vsco.co,FlyBit
+  - DOMAIN-SUFFIX,vultr.com,FlyBit
+  - DOMAIN-SUFFIX,w.org,FlyBit
+  - DOMAIN-SUFFIX,w3schools.com,FlyBit
+  - DOMAIN-SUFFIX,webtype.com,FlyBit
+  - DOMAIN-SUFFIX,wikiwand.com,FlyBit
+  - DOMAIN-SUFFIX,wikileaks.org,FlyBit
+  - DOMAIN-SUFFIX,wikimedia.org,FlyBit
+  - DOMAIN-SUFFIX,wikipedia.com,FlyBit
+  - DOMAIN-SUFFIX,wikipedia.org,FlyBit
+  - DOMAIN-SUFFIX,windows.com,FlyBit
+  - DOMAIN-SUFFIX,windows.net,FlyBit
+  - DOMAIN-SUFFIX,wire.com,FlyBit
+  - DOMAIN-SUFFIX,wordpress.com,FlyBit
+  - DOMAIN-SUFFIX,workflowy.com,FlyBit
+  - DOMAIN-SUFFIX,wp.com,FlyBit
+  - DOMAIN-SUFFIX,wsj.com,FlyBit
+  - DOMAIN-SUFFIX,wsj.net,FlyBit
+  - DOMAIN-SUFFIX,xda-developers.com,FlyBit
+  - DOMAIN-SUFFIX,xeeno.com,FlyBit
+  - DOMAIN-SUFFIX,xiti.com,FlyBit
+  - DOMAIN-SUFFIX,yahoo.com,FlyBit
+  - DOMAIN-SUFFIX,yimg.com,FlyBit
+  - DOMAIN-SUFFIX,ying.com,FlyBit
+  - DOMAIN-SUFFIX,yoyo.org,FlyBit
+  - DOMAIN-SUFFIX,ytimg.com,FlyBit
+  - DOMAIN-SUFFIX,telegra.ph,FlyBit
+  - DOMAIN-SUFFIX,telegram.org,FlyBit
+  - IP-CIDR,91.108.4.0/22,FlyBit,no-resolve
+  - IP-CIDR,91.108.8.0/21,FlyBit,no-resolve
+  - IP-CIDR,91.108.16.0/22,FlyBit,no-resolve
+  - IP-CIDR,91.108.56.0/22,FlyBit,no-resolve
+  - IP-CIDR,149.154.160.0/20,FlyBit,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,FlyBit,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,FlyBit,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,FlyBit,no-resolve
+  - IP-CIDR,120.232.181.162/32,FlyBit,no-resolve
+  - IP-CIDR,120.241.147.226/32,FlyBit,no-resolve
+  - IP-CIDR,120.253.253.226/32,FlyBit,no-resolve
+  - IP-CIDR,120.253.255.162/32,FlyBit,no-resolve
+  - IP-CIDR,120.253.255.34/32,FlyBit,no-resolve
+  - IP-CIDR,120.253.255.98/32,FlyBit,no-resolve
+  - IP-CIDR,180.163.150.162/32,FlyBit,no-resolve
+  - IP-CIDR,180.163.150.34/32,FlyBit,no-resolve
+  - IP-CIDR,180.163.151.162/32,FlyBit,no-resolve
+  - IP-CIDR,180.163.151.34/32,FlyBit,no-resolve
+  - IP-CIDR,203.208.39.0/24,FlyBit,no-resolve
+  - IP-CIDR,203.208.40.0/24,FlyBit,no-resolve
+  - IP-CIDR,203.208.41.0/24,FlyBit,no-resolve
+  - IP-CIDR,203.208.43.0/24,FlyBit,no-resolve
+  - IP-CIDR,203.208.50.0/24,FlyBit,no-resolve
+  - IP-CIDR,220.181.174.162/32,FlyBit,no-resolve
+  - IP-CIDR,220.181.174.226/32,FlyBit,no-resolve
+  - IP-CIDR,220.181.174.34/32,FlyBit,no-resolve
+  - DOMAIN,injections.adguard.org,DIRECT
+  - DOMAIN,local.adguard.org,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,FlyBit
