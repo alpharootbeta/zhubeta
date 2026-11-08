@@ -3,8 +3,9 @@ clash
 wangshu
 https://wangshu.asia/pei/80471eb83f174997b94c402cac9576b1.yaml
 
-bibapu
-https://wangshu.asia/pei/71edf89671ed721478ff478531349e56.yaml
-
 yiyuan
 https://dp3.config-sync.com/api/v1/client/subscribe?token=375747d749f0de3feb96ef1432249891
+
+langchao
+https://www.langchao39.top/link/PFTK96Nyf7GKTgzd?clash=1
+https://www.langchao39.top/link/PFTK96Nyf7GKTgzd?list=stash
